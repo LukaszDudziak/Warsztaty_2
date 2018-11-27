@@ -3,11 +3,8 @@ package pl.coderslab.EmployeeDisposition;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-import pl.coderslab.employee.Employee;
 
-import javax.validation.Valid;
 import java.util.List;
 
 @Controller
@@ -24,15 +21,17 @@ public class EmployeeDispositionController {
         model.addAttribute("employeeDisposition", employeeDisposition);
         return "disList";
     }
-    @GetMapping("/add")
-    public String add(Model model){
-        model.addAttribute("employeeDisposition", new EmployeeDisposition());
+    @GetMapping("/add/{id}")
+    public String add(Model model, @PathVariable Long id){
+        EmployeeDisposition employeeDisposition = new EmployeeDisposition();
+        employeeDisposition.setId(id);
+        model.addAttribute("employeeDisposition", employeeDisposition);
         return "disposition";
     }
-    @PostMapping("/add")
-    public String add(@ModelAttribute EmployeeDisposition employeeDisposition){
+    @PostMapping("/add/{id}")
+    public String add(@ModelAttribute EmployeeDisposition employeeDisposition, @PathVariable Long id){
         employeeDispositionRepository.save(employeeDisposition);
-        return "redirect:disList";
+        return "redirect:../../employees/list";
     }
 
     @GetMapping("/edit/{id}")

@@ -41,6 +41,7 @@
             <td>${employee.employed}</td>
             <td><a href="/employees/edit/${employee.id}">Edytuj</a></td>
             <td><a href="#" onclick="confirmDelete(${employee.id}, '${employee.lastName}')">Usuń</a></td>
+            <td><a href="/disposition/add/${employee.id}"/>Podaj dyspo</td>
         </tr>
     </c:forEach>
 </table>

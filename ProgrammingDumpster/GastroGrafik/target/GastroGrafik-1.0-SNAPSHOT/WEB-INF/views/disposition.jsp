@@ -35,6 +35,8 @@
     <label for="sunId"> Niedziela:</label>
     <form:checkbox path="sun" id="sunId"/><br/>
 
+
+
     <br/><br/>
     <input type="submit" value="save"><br/>
 

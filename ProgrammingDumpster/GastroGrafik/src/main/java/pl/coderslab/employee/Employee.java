@@ -78,4 +78,12 @@ public class Employee {
     public void setEmployed(LocalDate employed) {
         this.employed = employed;
     }
+
+    public EmployeeDisposition getEmployeeDisposition() {
+        return employeeDisposition;
+    }
+
+    public void setEmployeeDisposition(EmployeeDisposition employeeDisposition) {
+        this.employeeDisposition = employeeDisposition;
+    }
 }

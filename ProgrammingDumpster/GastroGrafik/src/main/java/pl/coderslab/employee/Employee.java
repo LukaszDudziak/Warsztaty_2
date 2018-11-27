@@ -3,13 +3,11 @@ package pl.coderslab.employee;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.format.annotation.DateTimeFormat;
-import org.springframework.format.annotation.NumberFormat;
+import pl.coderslab.EmployeeDisposition.EmployeeDisposition;
 
 import javax.persistence.*;
 import javax.validation.constraints.Size;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.util.Date;
 
 @Entity
 @Table(name = "EMPLOYEES")

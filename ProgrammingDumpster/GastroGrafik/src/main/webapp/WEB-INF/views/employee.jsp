@@ -10,7 +10,8 @@
 
 <html>
 <head>
-    <title>Title</title>
+    <title>Lista pracowników</title>
+
 </head>
 <body>
 <form:form method="post" modelAttribute="employee">
@@ -26,12 +27,12 @@
     <form:input type="text" path="email" id="emailId"/><br/>
     <form:errors path="email"/>
 
-    <label for="phoneNumberId">Phone Number: </label>
+    <label for="phoneNumberId">Numer telefonu: </label>
     <form:input path="phoneNumber" type="text" id="phoneNumberId"/>
     <form:errors path="phoneNumber"/>
 
-    <label for="employedId">Employed: </label>
-    <form:input path="employed" type="text" id="employedId"/>
+    <label for="employedId">Data zatrudnienia: </label>
+    <form:input type="date" path="employed" id="employedId"/>
     <form:errors path="employed"/>
 
     <br/><br/>

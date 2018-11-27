@@ -5,10 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
 import java.util.List;
@@ -37,7 +34,29 @@ public class EmployeeController {
             return "employee";
         }
         employeeRepository.save(employee);
+        return "redirect:list";
+    }
+
+    @GetMapping("/edit/{id}")
+    public String editEmployee(Model model, @PathVariable Long id) {
+        Employee employee = employeeRepository.findById(id).orElse(null);
+        model.addAttribute(employee);
         return "employee";
+    }
+
+    @PostMapping("/edit/{id}")
+    public String editEmployeePost(@PathVariable Long id, @ModelAttribute @Valid Employee employee, BindingResult bindingResult) {
+        if (bindingResult.hasErrors()) {
+            return "employee";
+        }
+        employeeRepository.save(employee);
+        return "redirect:../list";
+    }
+
+    @GetMapping("/delete/{id}")
+    public String deleteEmployee(@PathVariable Long id) {
+        employeeRepository.deleteById(id);
+        return "redirect:../list";
     }
 
 }

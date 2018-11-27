@@ -9,7 +9,14 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Lista pracowników:</title>
+    <script>
+        function confirmDelete(id, firstName) {
+            if (confirm("Czy na pewno chcesz usunąć pracownika " + firstName + "\"")) {
+                window.location.href = "/employees/delete/" + id;
+            }
+        }
+    </script>
 </head>
 <body>
 <table border="1px solid black">
@@ -20,6 +27,9 @@
         <th>Email</th>
         <th>Telefon</th>
         <th>Data zatrudnienia</th>
+        <th>Edycja danych</th>
+        <th>Usuń pracownika</th>
+        <th>Podaj dyspozycyjność</th>
 
     </tr>
     <c:forEach var="employee" items="${employees}">
@@ -29,6 +39,8 @@
             <td>${employee.email}</td>
             <td>${employee.phoneNumber}</td>
             <td>${employee.employed}</td>
+            <td><a href="/employees/edit/${employee.id}">Edytuj</a></td>
+            <td><a href="#" onclick="confirmDelete(${employee.id}, '${employee.lastName}')">Usuń</a></td>
         </tr>
     </c:forEach>
 </table>

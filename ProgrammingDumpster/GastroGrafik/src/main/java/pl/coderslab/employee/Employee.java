@@ -3,7 +3,6 @@ package pl.coderslab.employee;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.format.annotation.DateTimeFormat;
-import pl.coderslab.EmployeeDisposition.EmployeeDisposition;
 
 import javax.persistence.*;
 import javax.validation.constraints.Size;
@@ -27,9 +26,6 @@ public class Employee {
     @DateTimeFormat(pattern = "yyyy-MM-dd") //walidator konieczny, inaczej wyrzuca org.springframework.core.convert.ConversionFailedException
     private LocalDate employed;
 
-    @OneToOne
-    @JoinColumn(name = "disp_id")
-    private EmployeeDisposition employeeDisposition;
 
     public Long getId() {
         return id;
@@ -79,11 +75,4 @@ public class Employee {
         this.employed = employed;
     }
 
-    public EmployeeDisposition getEmployeeDisposition() {
-        return employeeDisposition;
-    }
-
-    public void setEmployeeDisposition(EmployeeDisposition employeeDisposition) {
-        this.employeeDisposition = employeeDisposition;
-    }
 }

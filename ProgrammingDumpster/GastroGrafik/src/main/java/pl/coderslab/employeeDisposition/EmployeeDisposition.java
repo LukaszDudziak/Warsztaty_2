@@ -1,5 +1,7 @@
-package pl.coderslab.EmployeeDisposition;
+package pl.coderslab.employeeDisposition;
 
+
+import pl.coderslab.employee.Employee;
 
 import javax.persistence.*;
 
@@ -8,7 +10,6 @@ import javax.persistence.*;
 public class EmployeeDisposition {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private boolean mon;
     private boolean tue;
@@ -17,6 +18,10 @@ public class EmployeeDisposition {
     private boolean fri;
     private boolean sat;
     private boolean sun;
+
+    @OneToOne
+    @MapsId
+    private Employee employee;
 
     public Long getId() {
         return id;
@@ -80,5 +85,13 @@ public class EmployeeDisposition {
 
     public void setSun(boolean sun) {
         this.sun = sun;
+    }
+
+    public Employee getEmployee() {
+        return employee;
+    }
+
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
     }
 }

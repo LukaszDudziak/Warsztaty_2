@@ -1,9 +1,10 @@
-package pl.coderslab.EmployeeDisposition;
+package pl.coderslab.employeeDisposition;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import pl.coderslab.employee.EmployeeRepository;
 
 import java.util.List;
 
@@ -13,6 +14,9 @@ public class EmployeeDispositionController {
 
     @Autowired
     EmployeeDispositionRepository employeeDispositionRepository;
+
+    @Autowired
+    EmployeeRepository employeeRepository;
 
 
     @GetMapping("/disList")
@@ -24,6 +28,7 @@ public class EmployeeDispositionController {
     @GetMapping("/add/{id}")
     public String add(Model model, @PathVariable Long id){
         EmployeeDisposition employeeDisposition = new EmployeeDisposition();
+        employeeDisposition.setEmployee(employeeRepository.findById(id).orElse(null));
         employeeDisposition.setId(id);
         model.addAttribute("employeeDisposition", employeeDisposition);
         return "disposition";

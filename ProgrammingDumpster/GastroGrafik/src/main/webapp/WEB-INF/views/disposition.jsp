@@ -35,7 +35,10 @@
     <label for="sunId"> Niedziela:</label>
     <form:checkbox path="sun" id="sunId"/><br/>
 
-
+    <label for="idId"> </label>
+    <form:input path="id" id="idId"/>
+    <label for="employeeId"></label>
+    <form:input path="employee" id="employeeId"/>
 
     <br/><br/>
     <input type="submit" value="save"><br/>

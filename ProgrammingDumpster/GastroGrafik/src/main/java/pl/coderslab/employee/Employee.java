@@ -29,6 +29,10 @@ public class Employee {
     @DateTimeFormat(pattern = "yyyy-MM-dd") //walidator konieczny, inaczej wyrzuca org.springframework.core.convert.ConversionFailedException
     private LocalDate employed;
 
+    @OneToOne
+    @JoinColumn(name = "disp_id")
+    private EmployeeDisposition employeeDisposition;
+
     public Long getId() {
         return id;
     }

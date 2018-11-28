@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import pl.coderslab.pub.Pub;
 import pl.coderslab.pub.PubRepository;
 
 @Controller
@@ -25,15 +24,9 @@ public class PubOpenController {
         return "open";
     }
     @PostMapping("/day/{id}")
-    @ResponseBody
     public String addPost(@ModelAttribute PubOpen pubOpen, @PathVariable Long id){
         pubOpenRepository.save(pubOpen);
-        return "zapisano";
+        return "redirect:../../pub/info";
     }
 
 }
-// @PostMapping("/add/{id}")
-//    public String add(@ModelAttribute EmployeeDisposition employeeDisposition, @PathVariable Long id){
-//        employeeDispositionRepository.save(employeeDisposition);
-//        return "redirect:../../employees/list";
-//    }

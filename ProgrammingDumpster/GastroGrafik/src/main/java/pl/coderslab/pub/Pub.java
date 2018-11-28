@@ -1,6 +1,7 @@
 package pl.coderslab.pub;
 
 import org.hibernate.validator.constraints.pl.NIP;
+import pl.coderslab.pubOpened.PubOpen;
 
 import javax.persistence.*;
 import javax.validation.constraints.Size;
@@ -17,6 +18,7 @@ public class Pub {
     private String email;
     @NIP
     private String nip;
+
 
     public Long getId() {
         return id;

@@ -34,9 +34,10 @@ public class EmployeeDispositionController {
         return "disposition";
     }
     @PostMapping("/add/{id}")
+    @ResponseBody
     public String add(@ModelAttribute EmployeeDisposition employeeDisposition, @PathVariable Long id){
         employeeDispositionRepository.save(employeeDisposition);
-        return "redirect:../../employees/list";
+        return "zapisano";
     }
 
     @GetMapping("/edit/{id}")

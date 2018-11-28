@@ -19,6 +19,15 @@ public class PubOpen {
     private boolean sat;
     private boolean sun;
 
+    private int nMon;
+    private int nTue;
+    private int nWed;
+    private int nThu;
+    private int nFri;
+    private int nSat;
+    private int nSun;
+
+
     @OneToOne
     @MapsId
     private Pub pub;
@@ -86,6 +95,62 @@ public class PubOpen {
 
     public void setSun(boolean sun) {
         this.sun = sun;
+    }
+
+    public int getnMon() {
+        return nMon;
+    }
+
+    public void setnMon(int nMon) {
+        this.nMon = nMon;
+    }
+
+    public int getnTue() {
+        return nTue;
+    }
+
+    public void setnTue(int nTue) {
+        this.nTue = nTue;
+    }
+
+    public int getnWed() {
+        return nWed;
+    }
+
+    public void setnWed(int nWed) {
+        this.nWed = nWed;
+    }
+
+    public int getnThu() {
+        return nThu;
+    }
+
+    public void setnThu(int nThu) {
+        this.nThu = nThu;
+    }
+
+    public int getnFri() {
+        return nFri;
+    }
+
+    public void setnFri(int nFri) {
+        this.nFri = nFri;
+    }
+
+    public int getnSat() {
+        return nSat;
+    }
+
+    public void setnSat(int nSat) {
+        this.nSat = nSat;
+    }
+
+    public int getnSun() {
+        return nSun;
+    }
+
+    public void setnSun(int nSun) {
+        this.nSun = nSun;
     }
 
     public Pub getPub() {

@@ -35,15 +35,15 @@ public class ScheduleController {
         schedule.setDate(LocalDate.now());
         schedule.setPubOpen(pubOpenRepository.findById(id).orElse(null));
         List<EmployeeDisposition> employeeDispositions = employeeDispositionRepository.findAll();
+        schedule.setEmployeeDisposition(employeeDispositions);
         List<Employee> employees = employeeRepository.findAll();
-        model.addAttribute("employeeDispositions", employeeDispositions);
         model.addAttribute("employees", employees);
         model.addAttribute("schedule", schedule);
         return "schedule";
     }
 
-    @PostMapping("/create")
-    public String createPost(@ModelAttribute Schedule schedule){
+    @PostMapping("/create/{id}")
+    public String createPost(@ModelAttribute Schedule schedule, @PathVariable Long id){
         scheduleRepository.save(schedule);
         return "redirect:../../pub/info";
     }

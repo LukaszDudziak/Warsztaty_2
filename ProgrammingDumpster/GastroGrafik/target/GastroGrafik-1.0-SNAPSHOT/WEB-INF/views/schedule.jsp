@@ -18,16 +18,31 @@
     ${schedule.date}<br>
     <br>
     <c:if test="${schedule.pubOpen.mon == true}">
-        Poniedziałek:
-        <c:forEach begin="0" end="${schedule.pubOpen.nMon-1}">
-            <c:forEach items="${employees}" var="emp">
-                ${emp.firstName}
-            </c:forEach>
+        Poniedziałek:<br>
+        <c:forEach begin="1" end="${schedule.pubOpen.nMon}">
+            <form:select path="workingEmployeeMon">
+                <c:forEach items="${schedule.employeeDisposition}" var="disp">
+                    <c:if test="${disp.mon==true}">
+                        <form:option value="${disp.employee.firstName}"/>
+                    </c:if>
+                </c:forEach>
+            </form:select>
 
         </c:forEach>
-
     </c:if>
-
+<br>
+    <c:if test="${schedule.pubOpen.tue == true}">
+        Wtorek:<br>
+        <c:forEach begin="1" end="${schedule.pubOpen.nTue}">
+            <form:select path="workingEmployeeTue">
+                <c:forEach items="${schedule.employeeDisposition}" var="disp">
+                    <c:if test="${disp.tue==true}">
+                        <form:option value="${disp.employee.firstName}"/>
+                    </c:if>
+                </c:forEach>
+            </form:select>
+        </c:forEach>
+    </c:if>
 
 <br><br>
     <input type="submit">

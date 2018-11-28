@@ -19,9 +19,11 @@ public class Schedule {
     private LocalDate date;
     @ManyToOne
     private PubOpen pubOpen;
-    @ManyToOne
-    private EmployeeDisposition employeeDisposition;
+    @OneToMany
+    private List<EmployeeDisposition> employeeDisposition;
 
+    private String workingEmployeeMon;
+    private String workingEmployeeTue;
 
     public Long getId() {
         return id;
@@ -47,11 +49,27 @@ public class Schedule {
         this.pubOpen = pubOpen;
     }
 
-    public EmployeeDisposition getEmployeeDisposition() {
+    public List<EmployeeDisposition> getEmployeeDisposition() {
         return employeeDisposition;
     }
 
-    public void setEmployeeDisposition(EmployeeDisposition employeeDisposition) {
+    public void setEmployeeDisposition(List<EmployeeDisposition> employeeDisposition) {
         this.employeeDisposition = employeeDisposition;
+    }
+
+    public String getWorkingEmployeeMon() {
+        return workingEmployeeMon;
+    }
+
+    public void setWorkingEmployeeMon(String workingEmployeeMon) {
+        this.workingEmployeeMon = workingEmployeeMon;
+    }
+
+    public String getWorkingEmployeeTue() {
+        return workingEmployeeTue;
+    }
+
+    public void setWorkingEmployeeTue(String workingEmployeeTue) {
+        this.workingEmployeeTue = workingEmployeeTue;
     }
 }

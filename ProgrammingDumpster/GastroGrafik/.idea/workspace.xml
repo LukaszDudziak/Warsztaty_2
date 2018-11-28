@@ -42,82 +42,49 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="bar: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="bar@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="bar: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="PUB_OPENED: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/info.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/pubOpened/PubOpenController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/pubOpened/PubOpen.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="21" column="3" selection-start-line="21" selection-start-column="3" selection-end-line="21" selection-end-column="3" />
+            <state relative-caret-position="140">
+              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#431#432#0" expanded="true" />
-                <element signature="e#456#457#0" expanded="true" />
-                <element signature="e#490#491#0" expanded="true" />
-                <element signature="e#518#519#0" expanded="true" />
-                <element signature="e#548#549#0" expanded="true" />
-                <element signature="e#574#575#0" expanded="true" />
-                <element signature="e#613#614#0" expanded="true" />
-                <element signature="e#643#644#0" expanded="true" />
-                <element signature="e#673#674#0" expanded="true" />
-                <element signature="e#699#700#0" expanded="true" />
-                <element signature="e#738#739#0" expanded="true" />
-                <element signature="e#768#769#0" expanded="true" />
-                <element signature="e#798#799#0" expanded="true" />
-                <element signature="e#824#825#0" expanded="true" />
-                <element signature="e#863#864#0" expanded="true" />
-                <element signature="e#893#894#0" expanded="true" />
-                <element signature="e#923#924#0" expanded="true" />
-                <element signature="e#949#950#0" expanded="true" />
-                <element signature="e#988#989#0" expanded="true" />
-                <element signature="e#1018#1019#0" expanded="true" />
-                <element signature="e#1048#1049#0" expanded="true" />
-                <element signature="e#1074#1075#0" expanded="true" />
-                <element signature="e#1113#1114#0" expanded="true" />
-                <element signature="e#1143#1144#0" expanded="true" />
-                <element signature="e#1173#1174#0" expanded="true" />
-                <element signature="e#1199#1200#0" expanded="true" />
-                <element signature="e#1238#1239#0" expanded="true" />
-                <element signature="e#1268#1269#0" expanded="true" />
-                <element signature="e#1298#1299#0" expanded="true" />
-                <element signature="e#1324#1325#0" expanded="true" />
-                <element signature="e#1363#1364#0" expanded="true" />
-                <element signature="e#1393#1394#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/open.jsp">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/employeeDisposition/EmployeeDisposition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="37" column="35" lean-forward="true" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+            <state relative-caret-position="5">
+              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="das://fb7b3762-c867-4469-adc2-db5029c3ea9e/schema/bar/table/PUB_OPENED">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/employeeDisposition/EmployeeDispositionController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://fb7b3762-c867-4469-adc2-db5029c3ea9e/schema/bar/table/EMPLOYEES">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -125,11 +92,38 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/pubOpened/PubOpenController.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://fb7b3762-c867-4469-adc2-db5029c3ea9e/schema/bar/table/EMPLOYEE_DISP">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/open.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+            <state relative-caret-position="195">
+              <caret line="37" column="35" lean-forward="true" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/disposition.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="354">
+              <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/employee/EmployeeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="332">
+              <caret line="63" column="47" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -165,7 +159,6 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/employee/EmployeeDisposition.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/EmployeeDisposition/EmployeeDispositionRepository.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/disList.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/employee/EmployeeController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/employee.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/employee/Employee.java" />
@@ -178,12 +171,13 @@
         <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/pub/PubController.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/pubOpened/PubOpen.java" />
         <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/pub/Pub.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/disposition.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/employeeDisposition/EmployeeDispositionController.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/info.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/open.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/pubOpened/PubOpenController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/disposition.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/employeeDisposition/EmployeeDispositionController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/coderslab/employee/EmployeeController.java" />
       </list>
     </option>
   </component>
@@ -351,7 +345,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543407959439" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543408583855" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -462,12 +456,12 @@
       <updated>1543235046343</updated>
       <workItem from="1543235049544" duration="7492000" />
       <workItem from="1543305486252" duration="35034000" />
-      <workItem from="1543401920170" duration="6018000" />
+      <workItem from="1543401920170" duration="6643000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48544000" />
+    <option name="totallyTimeSpent" value="49169000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -482,7 +476,7 @@
     <frame x="67" y="25" width="1299" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26735833" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26735833" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Persistence" order="3" side_tool="true" />
@@ -495,7 +489,7 @@
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32954547" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49960095" visible="true" weight="0.27435064" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49960095" visible="true" weight="0.27435064" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.58116883" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -515,7 +509,7 @@
       <window_info anchor="right" id="Maven" order="3" weight="0.32960895" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.15642458" />
+      <window_info anchor="right" id="Database" order="6" visible="true" weight="0.15642458" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" weight="0.30885875" />
@@ -652,16 +646,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/pubNeeds/PubNeed.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/employee/EmployeeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="40" column="53" lean-forward="true" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/pub/PubRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -696,47 +680,6 @@
             <element signature="e#477#478#0" expanded="true" />
             <element signature="e#511#512#0" expanded="true" />
             <element signature="e#539#540#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://fb7b3762-c867-4469-adc2-db5029c3ea9e/schema/bar/table/EMPLOYEES">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://fb7b3762-c867-4469-adc2-db5029c3ea9e/schema/bar/table/EMPLOYEE_DISP">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/disposition.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/employeeDisposition/EmployeeDispositionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/employeeDisposition/EmployeeDisposition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -776,13 +719,6 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/open.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="37" column="35" lean-forward="true" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -828,10 +764,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/open.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="37" column="35" lean-forward="true" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/disposition.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/pubOpened/PubOpenController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="28" column="39" selection-start-line="28" selection-start-column="39" selection-end-line="28" selection-end-column="39" />
+        <state relative-caret-position="140">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/employeeDisposition/EmployeeDisposition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/employeeDisposition/EmployeeDispositionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://fb7b3762-c867-4469-adc2-db5029c3ea9e/schema/bar/table/EMPLOYEES">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://fb7b3762-c867-4469-adc2-db5029c3ea9e/schema/bar/table/EMPLOYEE_DISP">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/coderslab/employee/EmployeeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="63" column="47" selection-start-line="63" selection-start-column="47" selection-end-line="63" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

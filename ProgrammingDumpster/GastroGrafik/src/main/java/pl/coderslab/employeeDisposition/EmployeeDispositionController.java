@@ -29,18 +29,16 @@ public class EmployeeDispositionController {
     public String add(Model model, @PathVariable Long id){
         EmployeeDisposition employeeDisposition = new EmployeeDisposition();
         employeeDisposition.setEmployee(employeeRepository.findById(id).orElse(null));
-        employeeDisposition.setId(id);
         model.addAttribute("employeeDisposition", employeeDisposition);
         return "disposition";
     }
     @PostMapping("/add/{id}")
-    @ResponseBody
     public String add(@ModelAttribute EmployeeDisposition employeeDisposition, @PathVariable Long id){
         employeeDispositionRepository.save(employeeDisposition);
-        return "zapisano";
+        return "redirect:../../employees/list";
     }
 
-    @GetMapping("/edit/{id}")
+ /*   @GetMapping("/edit/{id}")
     public String editEmployeeDisposition(Model model, @PathVariable Long id ) {
         EmployeeDisposition employeeDisposition = employeeDispositionRepository.findById(id).orElse(null);
         model.addAttribute(employeeDisposition);
@@ -52,7 +50,7 @@ public class EmployeeDispositionController {
         employeeDispositionRepository.save(employeeDisposition);
         return "redirect:../disList";
     }
-/*
+
     @GetMapping("/delete/{id}")
     public String deleteEmployeeDisposition(@PathVariable Long id) {
         employeeDispositionRepository.deleteById(id);

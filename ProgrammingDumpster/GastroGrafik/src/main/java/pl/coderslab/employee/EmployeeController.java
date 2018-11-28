@@ -6,6 +6,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import pl.coderslab.employeeDisposition.EmployeeDisposition;
+import pl.coderslab.employeeDisposition.EmployeeDispositionRepository;
 
 import javax.validation.Valid;
 import java.util.List;
@@ -16,6 +18,9 @@ public class EmployeeController {
 
     @Autowired
     EmployeeRepository employeeRepository;
+
+    @Autowired
+    EmployeeDispositionRepository employeeDispositionRepository;
 
     @GetMapping("/list")
     public String list(Model model){
@@ -55,6 +60,8 @@ public class EmployeeController {
 
     @GetMapping("/delete/{id}")
     public String deleteEmployee(@PathVariable Long id) {
+        EmployeeDisposition ed =employeeDispositionRepository.findById(id).orElse(null);
+        employeeDispositionRepository.delete(ed);
         employeeRepository.deleteById(id);
         return "redirect:../list";
     }

@@ -934,199 +934,289 @@
     <table id="236" parent="2" name="EMPLOYEE_DISP"/>
     <table id="237" parent="2" name="PUB"/>
     <table id="238" parent="2" name="PUB_OPENED"/>
-    <column id="239" parent="235" name="id">
+    <table id="239" parent="2" name="SCHEDULE"/>
+    <column id="240" parent="235" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="240" parent="235" name="email">
+    <column id="241" parent="235" name="email">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="241" parent="235" name="employed">
+    <column id="242" parent="235" name="employed">
       <Position>3</Position>
       <DataType>date|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="242" parent="235" name="firstName">
+    <column id="243" parent="235" name="firstName">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="243" parent="235" name="lastName">
+    <column id="244" parent="235" name="lastName">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="244" parent="235" name="phoneNumber">
+    <column id="245" parent="235" name="phoneNumber">
       <Position>6</Position>
       <DataType>varchar(9)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="245" parent="235" name="PRIMARY">
+    <key id="246" parent="235" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="246" parent="236" name="fri">
+    <column id="247" parent="236" name="fri">
       <Position>1</Position>
       <DataType>bit(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="247" parent="236" name="mon">
+    <column id="248" parent="236" name="mon">
       <Position>2</Position>
       <DataType>bit(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="248" parent="236" name="sat">
+    <column id="249" parent="236" name="sat">
       <Position>3</Position>
       <DataType>bit(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="249" parent="236" name="sun">
+    <column id="250" parent="236" name="sun">
       <Position>4</Position>
       <DataType>bit(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="250" parent="236" name="thu">
+    <column id="251" parent="236" name="thu">
       <Position>5</Position>
       <DataType>bit(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="251" parent="236" name="tue">
+    <column id="252" parent="236" name="tue">
       <Position>6</Position>
       <DataType>bit(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="252" parent="236" name="wed">
+    <column id="253" parent="236" name="wed">
       <Position>7</Position>
       <DataType>bit(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="253" parent="236" name="employee_id">
+    <column id="254" parent="236" name="employee_id">
       <Position>8</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="254" parent="236" name="PRIMARY">
+    <key id="255" parent="236" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>employee_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="255" parent="236" name="FKb3rj931hhc1ao3gyb4jkvuv8v">
+    <foreign-key id="256" parent="236" name="FKb3rj931hhc1ao3gyb4jkvuv8v">
       <ColNames>employee_id</ColNames>
       <RefSchemaName>bar</RefSchemaName>
       <RefTableName>EMPLOYEES</RefTableName>
       <RefColNames>id</RefColNames>
     </foreign-key>
-    <column id="256" parent="237" name="id">
+    <column id="257" parent="237" name="id">
       <Position>1</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="257" parent="237" name="address">
+    <column id="258" parent="237" name="address">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="258" parent="237" name="email">
+    <column id="259" parent="237" name="email">
       <Position>3</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="259" parent="237" name="name">
+    <column id="260" parent="237" name="name">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="260" parent="237" name="nip">
+    <column id="261" parent="237" name="nip">
       <Position>5</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="261" parent="237" name="phoneNumber">
+    <column id="262" parent="237" name="phoneNumber">
       <Position>6</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="262" parent="237" name="PRIMARY">
+    <key id="263" parent="237" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="263" parent="238" name="fri">
+    <column id="264" parent="238" name="fri">
       <Position>1</Position>
       <DataType>bit(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="264" parent="238" name="mon">
+    <column id="265" parent="238" name="mon">
       <Position>2</Position>
       <DataType>bit(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="265" parent="238" name="sat">
+    <column id="266" parent="238" name="sat">
       <Position>3</Position>
       <DataType>bit(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="266" parent="238" name="sun">
+    <column id="267" parent="238" name="sun">
       <Position>4</Position>
       <DataType>bit(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="267" parent="238" name="thu">
+    <column id="268" parent="238" name="thu">
       <Position>5</Position>
       <DataType>bit(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="268" parent="238" name="tue">
+    <column id="269" parent="238" name="tue">
       <Position>6</Position>
       <DataType>bit(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="269" parent="238" name="wed">
+    <column id="270" parent="238" name="wed">
       <Position>7</Position>
       <DataType>bit(1)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="270" parent="238" name="pub_id">
+    <column id="271" parent="238" name="pub_id">
       <Position>8</Position>
       <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="271" parent="238" name="PRIMARY">
+    <column id="272" parent="238" name="nFri">
+      <Position>9</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="273" parent="238" name="nMon">
+      <Position>10</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="274" parent="238" name="nSat">
+      <Position>11</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="275" parent="238" name="nSun">
+      <Position>12</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="276" parent="238" name="nThu">
+      <Position>13</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="277" parent="238" name="nTue">
+      <Position>14</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="278" parent="238" name="nWed">
+      <Position>15</Position>
+      <DataType>int(11)|0s</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="279" parent="238" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>pub_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="272" parent="238" name="FKs5rl6i9lqwlv3vhpcitgi4uxt">
+    <foreign-key id="280" parent="238" name="FKs5rl6i9lqwlv3vhpcitgi4uxt">
       <ColNames>pub_id</ColNames>
       <RefSchemaName>bar</RefSchemaName>
       <RefTableName>PUB</RefTableName>
       <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="281" parent="239" name="id">
+      <Position>1</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="282" parent="239" name="date">
+      <Position>2</Position>
+      <DataType>date|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="283" parent="239" name="employeeDisposition_employee_id">
+      <Position>3</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="284" parent="239" name="pubOpen_pub_id">
+      <Position>4</Position>
+      <DataType>bigint(20)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <index id="285" parent="239" name="FKdngbnww7rb139dbxcf8w6n31o">
+      <ColNames>employeeDisposition_employee_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <index id="286" parent="239" name="FKnimtdfrodkjcuekxpwsoi5kvg">
+      <ColNames>pubOpen_pub_id</ColNames>
+      <Type>btree</Type>
+    </index>
+    <key id="287" parent="239" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="288" parent="239" name="FKdngbnww7rb139dbxcf8w6n31o">
+      <ColNames>employeeDisposition_employee_id</ColNames>
+      <RefSchemaName>bar</RefSchemaName>
+      <RefTableName>EMPLOYEE_DISP</RefTableName>
+      <RefColNames>employee_id</RefColNames>
+    </foreign-key>
+    <foreign-key id="289" parent="239" name="FKnimtdfrodkjcuekxpwsoi5kvg">
+      <ColNames>pubOpen_pub_id</ColNames>
+      <RefSchemaName>bar</RefSchemaName>
+      <RefTableName>PUB_OPENED</RefTableName>
+      <RefColNames>pub_id</RefColNames>
     </foreign-key>
   </database-model>
 </dataSource>

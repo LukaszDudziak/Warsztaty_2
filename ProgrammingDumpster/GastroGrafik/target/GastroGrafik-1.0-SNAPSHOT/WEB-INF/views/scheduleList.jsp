@@ -17,12 +17,14 @@
             }
         }
     </script>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
 </head>
 <body>
-<table border="1px solid black">
+<table class="table table-striped" border="1px">
 
-    <tr>
-        <th>Data utworzenia:</th>
+    <thead class="thead-dark">
+        <th>Utworzono</th>
         <th>Poniedziałek</th>
         <th>Wtorek</th>
         <th>Środa</th>
@@ -31,10 +33,10 @@
         <th>Sobota</th>
         <th>Niedziela</th>
         <th>Usuń</th>
-    </tr>
+    </thead>
 
     <c:forEach var="schedule" items="${schedules}">
-        <tr>
+        <tbody>
             <td>${schedule.createDate}</td>
             <td>${schedule.workingEmployeeMon}</td>
             <td>${schedule.workingEmployeeTue}</td>
@@ -44,8 +46,13 @@
             <td>${schedule.workingEmployeeSat}</td>
             <td>${schedule.workingEmployeeSun}</td>
             <td><a href="#" onclick="confirmDelete(${schedule.id}, '${employee.createDate}')">Usuń</a></td>
-        </tr>
+        </tbody>
     </c:forEach>
 </table>
+<br>
+<br>
+<br>
+
+<a href="/pub/info">Wróć</a>
 </body>
 </html>

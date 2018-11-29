@@ -1,8 +1,6 @@
 package pl.coderslab.schedule;
 
-import pl.coderslab.employee.Employee;
 import pl.coderslab.employeeDisposition.EmployeeDisposition;
-import pl.coderslab.pub.Pub;
 import pl.coderslab.pubOpened.PubOpen;
 
 import javax.persistence.*;

@@ -19,12 +19,12 @@ public class EmployeeDispositionController {
     EmployeeRepository employeeRepository;
 
 
-  /*  @GetMapping("/disList")
+    @GetMapping("/disList")
     public String list(Model model){
         List<EmployeeDisposition> employeeDisposition =  employeeDispositionRepository.findAll();
         model.addAttribute("employeeDisposition", employeeDisposition);
         return "disList";
-    }*/
+    }
     @GetMapping("/add/{id}")
     public String add(Model model, @PathVariable Long id){
         EmployeeDisposition employeeDisposition = new EmployeeDisposition();

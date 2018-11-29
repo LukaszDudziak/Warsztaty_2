@@ -3,15 +3,12 @@ package pl.coderslab.schedule;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-import pl.coderslab.employee.Employee;
 import pl.coderslab.employee.EmployeeRepository;
 import pl.coderslab.employeeDisposition.EmployeeDisposition;
 import pl.coderslab.employeeDisposition.EmployeeDispositionRepository;
 import pl.coderslab.pubOpened.PubOpenRepository;
 
-import javax.validation.Valid;
 import java.time.LocalDate;
 import java.util.List;
 

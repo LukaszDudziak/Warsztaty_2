@@ -11,35 +11,41 @@
 <html>
 <head>
     <title>Lista pracowników</title>
-
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
 </head>
 <body>
 <form:form method="post" modelAttribute="employee">
-    <label for="firstNameId"> Imie:</label>
-    <form:input type="text" path="firstName" id="firstNameId"/><br/>
-    <form:errors path="firstName"/>
 
-    <label for="lastNameId"> Nazwisko:</label>
-    <form:input type="text" path="lastName" id="lastNameId"/><br/>
-    <form:errors path="lastName"/>
+<div class="container" align="center">
+    <div class="card">
+        <h3 class="header" align="center">Edytuj informacje o pracowniku</h3>
 
-    <label for="emailId">Email:</label>
-    <form:input type="text" path="email" id="emailId"/><br/>
-    <form:errors path="email"/>
+        <label for="firstNameId"> Imie:</label>
+        <form:input type="text" path="firstName" id="firstNameId"/><br/>
+        <form:errors path="firstName" element="div" cssClass="error"/>
 
-    <label for="phoneNumberId">Numer telefonu: </label>
-    <form:input path="phoneNumber" type="text" id="phoneNumberId"/>
-    <form:errors path="phoneNumber"/>
+        <label for="lastNameId"> Nazwisko:</label>
+        <form:input type="text" path="lastName" id="lastNameId"/><br/>
+        <form:errors path="lastName" element="div" cssClass="error"/>
 
-    <label for="employedId">Data zatrudnienia: </label>
-    <form:input type="date" path="employed" id="employedId"/>
-    <form:errors path="employed"/>
+        <label for="emailId">Email:</label>
+        <form:input type="text" path="email" id="emailId"/><br/>
+        <form:errors path="email" element="div" cssClass="error"/>
 
-    <br/><br/>
-    <input type = "submit" value="save"><br/>
+        <label for="phoneNumberId">Numer telefonu: </label>
+        <form:input path="phoneNumber" type="text" id="phoneNumberId"/><br>
+        <form:errors path="phoneNumber" element="div" cssClass="error"/>
 
+        <label for="employedId">Data zatrudnienia: </label>
+        <form:input type="date" path="employed" id="employedId"/>
+        <form:errors path="employed" element="div" cssClass="error"/>
 
+        <br/><br/>
+        <input type="submit" value="Zapisz"><br/>
 
-</form:form>
+        </form:form>
+    </div>
+</div>
 </body>
 </html>

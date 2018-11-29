@@ -17,6 +17,8 @@
             }
         }
     </script>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
 </head>
 <body>
 <table border="1px solid black">
@@ -42,8 +44,12 @@
             <td><a href="/employees/edit/${employee.id}">Edytuj</a></td>
             <td><a href="#" onclick="confirmDelete(${employee.id}, '${employee.lastName}')">Usuń</a></td>
             <td><a href="/disposition/add/${employee.id}"/>Podaj dyspo</td>
+
         </tr>
     </c:forEach>
 </table>
+<a href="/employees/add">Dodaj pracownika</a><br><br>
+
+<a href="/pub/info">Wróć</a>
 </body>
 </html>

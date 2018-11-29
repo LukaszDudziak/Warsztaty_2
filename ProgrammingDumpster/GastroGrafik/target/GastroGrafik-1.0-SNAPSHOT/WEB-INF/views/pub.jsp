@@ -10,34 +10,49 @@
 <html>
 <head>
     <title>Title</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
 </head>
 <body>
 <form:form method="post" modelAttribute="pub">
-    <label for="nameId"> Nazwa:</label>
-    <form:input type="text" path="name" id="nameId"/><br/>
-    <form:errors path="name"/>
+    <div class="container" align="center" >
+        <div class="card">
+            <h3 class="header" align="center">Edytuj informacje o lokalu</h3>
 
-    <label for="addressId"> Adres:</label>
-    <form:input type="text" path="address" id="addressId"/><br/>
-    <form:errors path="address"/>
+            <div class="form-group">
+                <label for="nameId"> Nazwa:</label>
+                <form:input type="text" path="name" id="nameId" class="form-group" /><br/>
+                <form:errors path="name" element="div" cssClass="error"/>
+            </div>
+            <div class="form-group">
+                <label for="addressId"> Adres:</label>
+                <form:input type="text" path="address" id="addressId"/><br/>
+                <form:errors path="address"/>
+            </div>
+            <div class="form-group">
+                <label for="phoneNumberId">Numer telefonu: </label>
+                <form:input path="phoneNumber" type="text" id="phoneNumberId"/>
+                <form:errors path="phoneNumber"/>
+            </div>
+            <div class="form-group">
+                <label for="emailId">Email:</label>
+                <form:input type="text" path="email" id="emailId"/><br/>
+                <form:errors path="email"/>
+            </div>
+            <div class="form-group">
+                <label for="nipId">Nip:</label>
+                <form:input type="text" path="nip" id="nipId"/><br/>
+                <form:errors path="nip" element="div" cssClass="error"/>
+            </div>
 
-    <label for="phoneNumberId">Numer telefonu: </label>
-    <form:input path="phoneNumber" type="text" id="phoneNumberId"/>
-    <form:errors path="phoneNumber"/>
-
-    <label for="emailId">Email:</label>
-    <form:input type="text" path="email" id="emailId"/><br/>
-    <form:errors path="email"/>
-
-    <label for="nipId">Nip:</label>
-    <form:input type="text" path="nip" id="nipId"/><br/>
-    <form:errors path="nip"/>
-
-    <br/><br/>
-    <input type = "submit" value="save"><br/>
+            <br/><br/>
+            <button type="submit" class="btn-outline-primary">Zapisz informacje</button>
 
 
+        </div>
+    </div>
 
 </form:form>
+<a href="/pub/info">Wróć</a>
 </body>
 </html>

@@ -10,6 +10,8 @@
 <html>
 <head>
     <title>Title</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
 </head>
 <body>
 <form:form method="post" modelAttribute="employeeDisposition">
@@ -38,7 +40,7 @@
     <form:hidden path="employee.id" id="employeeId"/>
 
     <br/>
-    <input type="submit" value="save"><br/>
+    <input type="submit" value="Zapisz"><br/>
 
 </form:form>
 </body>

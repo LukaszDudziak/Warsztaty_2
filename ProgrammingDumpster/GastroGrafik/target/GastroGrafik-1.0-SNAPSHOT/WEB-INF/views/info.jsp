@@ -10,20 +10,39 @@
 <html>
 <head>
     <title>Title</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
 </head>
 <body>
-<c:forEach var="pub" items="${pubs}">
-    <tr>
-        <td>${pub.name}</td>
-        <td>${pub.address}</td>
-        <td>${pub.email}</td>
-        <td>${pub.phoneNumber}</td>
-        <td>${pub.nip}</td>
-        <td><a href="/pub/edit/${pub.id}">Edytuj informacje</a></td>
-        <td><a href="/open/day/${pub.id}">Ustaw otwarcie</a></td>
-        <td><a href="/schedule/create/${pub.id}">Ustaw grafik</a></td>
-        <td><a href="/schedule/list/"/>Wyświetl utworzone grafiki </td>
-    </tr>
-</c:forEach>
+
+<div class="container">
+    <div class="card">
+        <h3 class="header" align="center">GastroGrafik</h3>
+
+        <c:forEach var="pub" items="${pubs}">
+
+            <div class="container">
+                <a href="/pub/edit/${pub.id}">Edytuj informacje</a> |
+                <a href="/open/day/${pub.id}">Ustaw otwarcie</a> |
+                <a href="/schedule/create/${pub.id}">Ustaw grafik</a> |
+                <a href="/schedule/list">Wyświetl utworzone grafiki</a> |
+                <a href="/employees/list">Zarządzaj pracownikami</a> |
+                <a href="/kolorki.jsp">KOLORKI</a>
+            </div>
+            <div align="center">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Informacje:</h5>
+                        Nazwa: ${pub.name}<br>
+                        Adres: ${pub.address}<br>
+                        Email: ${pub.email}<br>
+                        Telefon: ${pub.phoneNumber}<br>
+                        NIP: ${pub.nip}
+                    </div>
+                </div>
+            </div>
+        </c:forEach>
+    </div>
+</div>
 </body>
 </html>

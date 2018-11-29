@@ -22,6 +22,7 @@
         <td><a href="/pub/edit/${pub.id}">Edytuj informacje</a></td>
         <td><a href="/open/day/${pub.id}">Ustaw otwarcie</a></td>
         <td><a href="/schedule/create/${pub.id}">Ustaw grafik</a></td>
+        <td><a href="/schedule/list/"/>Wyświetl utworzone grafiki </td>
     </tr>
 </c:forEach>
 </body>

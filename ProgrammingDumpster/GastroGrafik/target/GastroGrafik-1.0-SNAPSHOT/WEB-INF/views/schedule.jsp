@@ -137,6 +137,9 @@
                     </form:select>
                 </c:forEach>
             </c:if>
+            <c:if test="${schedule.pubOpen.sun == false}">
+                Niedziela: ZAMKNIĘTE
+            </c:if>
             <br>
             <br><br>
             <input type="submit" value="Zapisz grafik">

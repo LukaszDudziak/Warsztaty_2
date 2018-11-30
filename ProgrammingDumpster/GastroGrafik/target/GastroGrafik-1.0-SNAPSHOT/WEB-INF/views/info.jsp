@@ -27,7 +27,7 @@
                 <a href="/schedule/create/${pub.id}">Ustaw grafik</a> |
                 <a href="/schedule/list">Wyświetl utworzone grafiki</a> |
                 <a href="/employees/list">Zarządzaj pracownikami</a> |
-                <a href="/kolorki.jsp">KOLORKI</a>
+                <div align="center"><a href="/kolorki.jsp">KOLORKI</a></div>
             </div>
             <div align="center">
                 <div class="card" style="width: 18rem;">

@@ -21,7 +21,7 @@
     <link href="/css/main.css" rel="stylesheet">
 </head>
 <body>
-<table border="1px solid black">
+<table class="table table-striped" border="1px">
 
     <tr>
         <th>Imie</th>

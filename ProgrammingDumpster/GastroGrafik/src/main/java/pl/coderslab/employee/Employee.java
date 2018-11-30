@@ -19,7 +19,7 @@ public class Employee {
     private String firstName;
     @NotBlank
     private String lastName;
-    @Email
+    @Email( message = "popraw maila")
     private String email;
     @Size(min = 9, max = 9)
     private String phoneNumber;

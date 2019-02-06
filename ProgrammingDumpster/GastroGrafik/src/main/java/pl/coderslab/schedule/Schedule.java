@@ -115,4 +115,17 @@ public class Schedule {
     public void setWorkingEmployeeSun(String workingEmployeeSun) {
         this.workingEmployeeSun = workingEmployeeSun;
     }
+
+    @Override
+    public String toString() {
+        return "Schedule{" +
+                "Poniedziałek:='" + workingEmployeeMon + '\'' +
+                ", Wtorek='" + workingEmployeeTue + '\'' +
+                ", Środa='" + workingEmployeeWed + '\'' +
+                ", Czwartek='" + workingEmployeeThu + '\'' +
+                ", Piątek='" + workingEmployeeFri + '\'' +
+                ", Sobota='" + workingEmployeeSat + '\'' +
+                ", Niedziela='" + workingEmployeeSun + '\'' +
+                '}';
+    }
 }

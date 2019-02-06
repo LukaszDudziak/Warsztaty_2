@@ -18,9 +18,10 @@
 <body>
 <form:form method="post" modelAttribute="schedule">
 
-    <div class="container">
-        <div class="card">
-            <h3 class="header" align="center">Dawej ten grafik</h3>
+<div class="container">
+    <div class="card">
+        <h3 class="header" align="center">Dawej ten grafik</h3>
+        <div class="form-group">
             <c:if test="${schedule.pubOpen.mon == true}">
                 Poniedziałek:<br>
                 <c:forEach begin="1" end="${schedule.pubOpen.nMon}">
@@ -37,8 +38,8 @@
             <c:if test="${schedule.pubOpen.mon == false}">
                 Poniedziałek: ZAMKNIĘTE
             </c:if>
-            <br>
-
+        </div>
+        <div class="form-group">
             <c:if test="${schedule.pubOpen.tue == true}">
                 Wtorek:<br>
                 <c:forEach begin="1" end="${schedule.pubOpen.nTue}">
@@ -55,7 +56,8 @@
             <c:if test="${schedule.pubOpen.tue == false}">
                 Wtorek: ZAMKNIĘTE
             </c:if>
-            <br>
+        </div>
+        <div class="form-group">
             <c:if test="${schedule.pubOpen.wed == true}">
                 Środa:<br>
                 <c:forEach begin="1" end="${schedule.pubOpen.nWed}">
@@ -72,7 +74,8 @@
             <c:if test="${schedule.pubOpen.wed == false}">
                 Środa: ZAMKNIĘTE
             </c:if>
-            <br>
+        </div>
+        <div class="form-group">
             <c:if test="${schedule.pubOpen.thu == true}">
                 Czwartek:<br>
                 <c:forEach begin="1" end="${schedule.pubOpen.nThu}">
@@ -89,7 +92,8 @@
             <c:if test="${schedule.pubOpen.thu == false}">
                 Czwartek: ZAMKNIĘTE
             </c:if>
-            <br>
+        </div>
+        <div class="form-group">
             <c:if test="${schedule.pubOpen.fri == true}">
                 Piątek:<br>
                 <c:forEach begin="1" end="${schedule.pubOpen.nFri}">
@@ -106,7 +110,8 @@
             <c:if test="${schedule.pubOpen.fri == false}">
                 Piątek: ZAMKNIĘTE
             </c:if>
-            <br>
+        </div>
+        <div class="form-group">
             <c:if test="${schedule.pubOpen.sat == true}">
                 Sobota:<br>
                 <c:forEach begin="1" end="${schedule.pubOpen.nSat}">
@@ -123,7 +128,8 @@
             <c:if test="${schedule.pubOpen.sat == false}">
                 Sobota: ZAMKNIĘTE
             </c:if>
-            <br>
+        </div>
+        <div class="form-group">
             <c:if test="${schedule.pubOpen.sun == true}">
                 Niedziela:<br>
                 <c:forEach begin="1" end="${schedule.pubOpen.nSun}">
@@ -140,12 +146,14 @@
             <c:if test="${schedule.pubOpen.sun == false}">
                 Niedziela: ZAMKNIĘTE
             </c:if>
-            <br>
-            <br><br>
+        </div>
+        <div class="form-group">
             <input type="submit" value="Zapisz grafik">
         </div>
+        <div class="form-group">
+        </div>
     </div>
-</form:form>
-<a href="/pub/info">Wróć</a>
+    </form:form>
+    <a href="/pub/info">Wróć</a>
 </body>
 </html>
